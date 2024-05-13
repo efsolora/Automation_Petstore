@@ -2,29 +2,27 @@ plugins {
     id 'java'
 }
 
-group = 'sofka.com.co'
-version = '1.0-SNAPSHOT'
-
 repositories {
-    mavenCentral()
+    maven{
+        url 'https://repo.maven.apache.org/maven2'
+    }
 }
 
-dependencies {
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+dependencies{
     testImplementation 'com.intuit.karate:karate-junit5:1.2.0.RC5'
     testImplementation 'net.masterthought:cucumber-reporting:5.7.0'
 }
 
 test {
     useJUnitPlatform()
-    systemProperty "baseUrl", System.properties.getProperty("baseUrl")
+    outputs.upToDateWhen { false }
 }
 
-sourceSets {
+sourceSets{
     test{
-        resources {
-            srcDir file("src/test/java")
+        resources{
+            srcDir file('src/test/java')
+            exclude '**/*.java'
         }
     }
 }

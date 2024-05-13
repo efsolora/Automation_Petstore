@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+      posthog.register_once({
+        karate_version:"1.2.0.RC5"
+      });
+      posthog.capture('report_feature');
+    </script>    
+    <title>src.test.java.petStore.get.findPetWithStatus.findPetForStatus-get</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-05-13 10:04:07 a. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Find pet</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/petStore/get/findPetWithStatus/findPetForStatus-get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Find pet with Status</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Find pet</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>2441</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;https://petstore.swagger.io/v2&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">103</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../../post/createPet/createPet-post.feature@Create&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1989</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.petStore.get.findPetWithStatus.post.createPet.createPet-post</div>
+      </div>
+      <div class="time-cell passed">1884</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;https://petstore.swagger.io/v2&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/pet&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def var =  { id: #(petId), name: #(petName), category: { id: 1234567, name: &quot;string&quot; }, photoUrls: [&quot;string&quot;], tags: [{ id: 1234567, name: &quot;string&quot; }], status: #(petStatus) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">39</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseSuccesful = &quot;read(&#39;response-successful-createPet-post.json)&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request var</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">939</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.1.12">10:04:05.101 request:
+1 &gt; POST https://petstore.swagger.io/v2/pet
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 158
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:&quot;5555555&quot;,&quot;name&quot;:&quot;andres&quot;,&quot;category&quot;:{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;},&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+10:04:05.791 response time in milliseconds: 685
+1 &lt; 200
+1 &lt; Date: Mon, 13 May 2024 15:03:59 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Server: Jetty(9.2.9.v20150224)
+{&quot;id&quot;:5555555,&quot;category&quot;:{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;andres&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def IdPet = $.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.1.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def petStatus = $.status</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.2.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;https://petstore.swagger.io/v2&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.2.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/pet&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.2.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def var =  { id: #(petId), name: #(petName), category: { id: 1234567, name: &quot;string&quot; }, photoUrls: [&quot;string&quot;], tags: [{ id: 1234567, name: &quot;string&quot; }], status: #(petStatus) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.2.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseSuccesful = &quot;read(&#39;response-successful-createPet-post.json)&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.2.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request var</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.2.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">315</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.2.12">10:04:05.810 request:
+2 &gt; POST https://petstore.swagger.io/v2/pet
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 159
+2 &gt; Host: petstore.swagger.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:&quot;-111111&quot;,&quot;name&quot;:&quot;4324423&quot;,&quot;category&quot;:{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;},&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+10:04:06.121 response time in milliseconds: 311
+2 &lt; 200
+2 &lt; Date: Mon, 13 May 2024 15:03:59 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2 &lt; Server: Jetty(9.2.9.v20150224)
+{&quot;id&quot;:9223372036854775807,&quot;category&quot;:{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;4324423&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.2.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.2.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def IdPet = $.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.2.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def petStatus = $.status</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.3.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;https://petstore.swagger.io/v2&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.3.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/pet&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.3.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def var =  { id: #(petId), name: #(petName), category: { id: 1234567, name: &quot;string&quot; }, photoUrls: [&quot;string&quot;], tags: [{ id: 1234567, name: &quot;string&quot; }], status: #(petStatus) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.3.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseSuccesful = &quot;read(&#39;response-successful-createPet-post.json)&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.3.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request var</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.3.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">283</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.3.12">10:04:06.136 request:
+3 &gt; POST https://petstore.swagger.io/v2/pet
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 164
+3 &gt; Host: petstore.swagger.io
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:&quot;10202002&quot;,&quot;name&quot;:&quot;jidajwi4324&quot;,&quot;category&quot;:{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;},&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+10:04:06.417 response time in milliseconds: 281
+3 &lt; 200
+3 &lt; Date: Mon, 13 May 2024 15:04:00 GMT
+3 &lt; Content-Type: application/json
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+3 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+3 &lt; Server: Jetty(9.2.9.v20150224)
+{&quot;id&quot;:10202002,&quot;category&quot;:{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;jidajwi4324&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.3.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.3.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def IdPet = $.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.3.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def petStatus = $.status</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.4.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;https://petstore.swagger.io/v2&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.4.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/pet&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.4.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def var =  { id: #(petId), name: #(petName), category: { id: 1234567, name: &quot;string&quot; }, photoUrls: [&quot;string&quot;], tags: [{ id: 1234567, name: &quot;string&quot; }], status: #(petStatus) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.4.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseSuccesful = &quot;read(&#39;response-successful-createPet-post.json)&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.4.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request var</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.4.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">274</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.4.12">10:04:06.439 request:
+4 &gt; POST https://petstore.swagger.io/v2/pet
+4 &gt; Content-Type: application/json; charset=UTF-8
+4 &gt; Content-Length: 158
+4 &gt; Host: petstore.swagger.io
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+4 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:&quot;15555&quot;,&quot;name&quot;:&quot;***##*ZZ&quot;,&quot;category&quot;:{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;},&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+10:04:06.710 response time in milliseconds: 269
+4 &lt; 200
+4 &lt; Date: Mon, 13 May 2024 15:04:00 GMT
+4 &lt; Content-Type: application/json
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Connection: keep-alive
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+4 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+4 &lt; Server: Jetty(9.2.9.v20150224)
+{&quot;id&quot;:15555,&quot;category&quot;:{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;***##*ZZ&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.4.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.4.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def IdPet = $.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.4.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def petStatus = $.status</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>params {&quot;status&quot;: #(petStatus)}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/pet/findByStatus&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">330</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">10:04:06.723 request:
+5 &gt; GET https://petstore.swagger.io/v2/pet/findByStatus?status=available
+5 &gt; Host: petstore.swagger.io
+5 &gt; Connection: Keep-Alive
+5 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+5 &gt; Accept-Encoding: gzip,deflate
+
+
+10:04:07.044 response time in milliseconds: 320
+5 &lt; 200
+5 &lt; Date: Mon, 13 May 2024 15:04:00 GMT
+5 &lt; Content-Type: application/json
+5 &lt; Transfer-Encoding: chunked
+5 &lt; Connection: keep-alive
+5 &lt; Access-Control-Allow-Origin: *
+5 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+5 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+5 &lt; Server: Jetty(9.2.9.v20150224)
+[{&quot;id&quot;:1856,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;Tom&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:99996,&quot;name&quot;:&quot;doggie_by_ms&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:9222968140497180179,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;test&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:2000,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;kot&quot;},&quot;name&quot;:&quot;KITI&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:2,&quot;category&quot;:{&quot;id&quot;:1232,&quot;name&quot;:&quot;555&quot;},&quot;name&quot;:&quot;CatTest&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;54&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:9222968140491042131,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:15,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Great Dane&quot;},&quot;name&quot;:&quot;Scooby&quot;,&quot;photoUrls&quot;:[&quot;https://resizing.flixster.com/jbrbgBJnUJHqOF4zjqoNE14hpgE=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29039_k_v8_aa.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;Dog&quot;},{&quot;id&quot;:0,&quot;name&quot;:&quot;Cartoon&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:12345,&quot;category&quot;:{&quot;id&quot;:21,&quot;name&quot;:&quot;wild&quot;},&quot;name&quot;:&quot;vickky&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:22,&quot;name&quot;:&quot;dogs&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:12,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1245,&quot;category&quot;:{&quot;id&quot;:1245,&quot;name&quot;:&quot;xyz&quot;},&quot;name&quot;:&quot;xyz&quot;,&quot;photoUrls&quot;:[&quot;test&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:804,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;lewis&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:9223372036854742004,&quot;category&quot;:{&quot;id&quot;:116,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;Crawford&quot;,&quot;photoUrls&quot;:[&quot;extend_ivory.igl&quot;],&quot;tags&quot;:[{&quot;id&quot;:5,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:5555555,&quot;category&quot;:{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;andres&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:10202002,&quot;category&quot;:{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;jidajwi4324&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:15555,&quot;category&quot;:{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;***##*ZZ&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1234567,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:99999999,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;Lusy&quot;,&quot;photoUrls&quot;:[&quot;https://example.com/lucy/photo1&quot;,&quot;https://example.com/lucy/photo1&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;Middle dog&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:132,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;dickey&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:100,&quot;name&quot;:&quot;bowman&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:134,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;dickey&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:100,&quot;name&quot;:&quot;bowman&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:703850,&quot;category&quot;:{&quot;id&quot;:2020,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1715610913747,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;Dog 1&quot;,&quot;photoUrls&quot;:[&quot;data:image/jpeg;base64,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&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;12 main street &quot;},{&quot;id&quot;:1,&quot;name&quot;:&quot;&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;District Of Columbia&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;WASHINGTON&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:128,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;roco&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:110928384756,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;test category&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[{&quot;id&quot;:1123,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:678,&quot;category&quot;:{&quot;id&quot;:356,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;Doggi&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:23,&quot;name&quot;:&quot;yuki&quot;,&quot;photoUrls&quot;:[&quot;photo&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:34684678,&quot;name&quot;:&quot;Felix&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:99,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;TEST&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:45,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:13052024,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;strong&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;buldog&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:420,&quot;category&quot;:{&quot;id&quot;:42,&quot;name&quot;:&quot;Chihuahua&quot;},&quot;name&quot;:&quot;PasBre&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match $.id == IdPet</span>
+      </div>
+    </div>
+    <div class="time-cell failed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">10:04:07.066 src/test/java/petStore/get/findPetWithStatus/findPetForStatus-get.feature:12
+And match $.id == IdPet
+match failed: EQUALS
+  $ | actual path does not exist (STRING:NUMBER)
+  &#39;#notpresent&#39;
+  15555
+
+src/test/java/petStore/get/findPetWithStatus/findPetForStatus-get.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref skipped">13</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match $.status == petStatus</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

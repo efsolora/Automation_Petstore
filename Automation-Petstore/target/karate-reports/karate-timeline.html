@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/petStore\/get\/findPetWithID\/findPetWithID-get[1:6]","start":1715631503154,"end":1715631505525,"title":"src\/test\/java\/petStore\/get\/findPetWithID\/findPetWithID-get[1:6] 15:18:23.154-15:18:25.525 Successfully find pet by ID"},{"id":2,"group":1,"content":"src\/test\/java\/petStore\/get\/findPetWithID\/findPetWithID-get[2.1:20]","start":1715631505530,"end":1715631505810,"title":"src\/test\/java\/petStore\/get\/findPetWithID\/findPetWithID-get[2.1:20] 15:18:25.530-15:18:25.810 Fail find pet by ID with invalid information"},{"id":3,"group":1,"content":"src\/test\/java\/petStore\/get\/findPetWithID\/findPetWithID-get[2.2:21]","start":1715631505816,"end":1715631506127,"title":"src\/test\/java\/petStore\/get\/findPetWithID\/findPetWithID-get[2.2:21] 15:18:25.816-15:18:26.127 Fail find pet by ID with invalid information"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

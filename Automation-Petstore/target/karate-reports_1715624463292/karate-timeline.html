@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.1:33]","start":1715624326831,"end":1715624327929,"title":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.1:33] 13:18:46.831-13:18:47.929 Add a pet with different information invalid"},{"id":2,"group":1,"content":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.2:34]","start":1715624327938,"end":1715624328256,"title":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.2:34] 13:18:47.938-13:18:48.256 Add a pet with different information invalid","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.3:35]","start":1715624328263,"end":1715624328580,"title":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.3:35] 13:18:48.263-13:18:48.580 Add a pet with different information invalid"},{"id":4,"group":1,"content":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.4:36]","start":1715624328588,"end":1715624328913,"title":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.4:36] 13:18:48.588-13:18:48.913 Add a pet with different information invalid"},{"id":5,"group":1,"content":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.5:37]","start":1715624328920,"end":1715624329254,"title":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.5:37] 13:18:48.920-13:18:49.254 Add a pet with different information invalid","className":"failed"},{"id":6,"group":1,"content":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.6:38]","start":1715624329265,"end":1715624329568,"title":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.6:38] 13:18:49.265-13:18:49.568 Add a pet with different information invalid","className":"failed"},{"id":7,"group":1,"content":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.7:39]","start":1715624329577,"end":1715624329854,"title":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.7:39] 13:18:49.577-13:18:49.854 Add a pet with different information invalid","className":"failed"},{"id":8,"group":1,"content":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.8:40]","start":1715624329861,"end":1715624330190,"title":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.8:40] 13:18:49.861-13:18:50.190 Add a pet with different information invalid","className":"failed"},{"id":9,"group":1,"content":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.9:41]","start":1715624330194,"end":1715624330508,"title":"src\/test\/java\/petStore\/post\/createPet\/createPet-post[2.9:41] 13:18:50.194-13:18:50.508 Add a pet with different information invalid","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

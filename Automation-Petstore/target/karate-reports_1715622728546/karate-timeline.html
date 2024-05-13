@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/petStore\/put\/updateNameAndStatus\/updatenameandstatus-put[1:7]","start":1715622555757,"end":1715622558163,"title":"src\/test\/java\/petStore\/put\/updateNameAndStatus\/updatenameandstatus-put[1:7] 12:49:15.757-12:49:18.163 Find pet"},{"id":2,"group":1,"content":"src\/test\/java\/petStore\/put\/updateNameAndStatus\/updatenameandstatus-put[2:17]","start":1715622558168,"end":1715622559744,"title":"src\/test\/java\/petStore\/put\/updateNameAndStatus\/updatenameandstatus-put[2:17] 12:49:18.168-12:49:19.744 Update pet name","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/petStore\/put\/updateNameAndStatus\/updatenameandstatus-put[3:26]","start":1715622559747,"end":1715622561260,"title":"src\/test\/java\/petStore\/put\/updateNameAndStatus\/updatenameandstatus-put[3:26] 12:49:19.747-12:49:21.260 Update pet status","className":"failed"},{"id":4,"group":1,"content":"src\/test\/java\/petStore\/put\/updateNameAndStatus\/updatenameandstatus-put[4:35]","start":1715622561263,"end":1715622562850,"title":"src\/test\/java\/petStore\/put\/updateNameAndStatus\/updatenameandstatus-put[4:35] 12:49:21.263-12:49:22.850 Attempt oupdate non-existing pet","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/petStore\/put\/updateNameAndStatus\/updatenameandstatus-put[5:42]","start":1715622562856,"end":1715622564438,"title":"src\/test\/java\/petStore\/put\/updateNameAndStatus\/updatenameandstatus-put[5:42] 12:49:22.856-12:49:24.438 Attempt to update pet with invalid data","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
