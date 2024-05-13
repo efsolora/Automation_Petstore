@@ -1,0 +1,13 @@
+﻿Después de explorar la API de PetStore y realizar diversas pruebas, llegué a algunas conclusiones clave:
+
+
+* Encontré casos en los que el código de estado de la respuesta no coincidía con lo esperado, lo que sugiere dificultades para manejar solicitudes incorrectas o con datos inesperados.
+
+
+* Observé que el tiempo de respuesta de las solicitudes era variable, lo que podría indicar problemas de rendimiento o inconsistencias en el sistema.
+
+
+*  En ocasiones, las respuestas no se alineaban con lo esperado, lo que podría indicar problemas en la lógica interna de la API.
+
+
+En conclusión, las pruebas revelaron problemas en la gestión de errores, el rendimiento y la consistencia de las respuestas en la API de PetStore. Esto subraya la importancia de realizar pruebas exhaustivas antes de lanzar una API.
